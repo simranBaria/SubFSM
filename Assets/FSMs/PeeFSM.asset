@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f945e777233a59f4aba40aeca29093a6, type: 3}
+  m_Name: PeeFSM
+  m_EditorClassIdentifier: 
+  _serializedGraph: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"executionMode":1,"actions":[{"changeInThirst":10.0,"target":{"_name":"fireHydrant","_targetVariableID":"bafbebe0-6bdb-4e00-bd66-69d15fc8167e"},"walkSpeed":{"_name":"walkSpeed","_targetVariableID":"afd05836-9dfb-4403-89b1-2a03e5dcc54f"},"thirstLevel":{"_name":"thirstLevel","_targetVariableID":"33f48e9e-312b-4c95-be8d-97c4f4932f03"},"peeLevel":{"_name":"peeLevel","_targetVariableID":"e3e46411-f270-4cc9-a732-33c9a2bc7187"},"$type":"NodeCanvas.Tasks.Actions.WalkingAT"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Walking","_position":{"x":287.0,"y":200.439},"$type":"NodeCanvas.StateMachines.ActionState","$id":"0"},{"_actionList":{"executionMode":1,"actions":[{"changeInThirst":10.0,"changeInPee":-50.0,"thirstLevel":{"_name":"thirstLevel","_targetVariableID":"33f48e9e-312b-4c95-be8d-97c4f4932f03"},"peeLevel":{"_name":"peeLevel","_targetVariableID":"e3e46411-f270-4cc9-a732-33c9a2bc7187"},"$type":"NodeCanvas.Tasks.Actions.WaitingAT"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Peeing","_position":{"x":447.0,"y":281.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"1"}],"connections":[{"_condition":{"target":{"_name":"fireHydrant","_targetVariableID":"bafbebe0-6bdb-4e00-bd66-69d15fc8167e"},"arrivalDistance":0.5,"$type":"NodeCanvas.Tasks.Conditions.ReachedDestinationCT"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
+  _objectReferences: []
+  _graphSource:
+    _version: 3.31
+    _category: 
+    _comments: 
+    _translation: {x: 31.27732, y: -36.356888}
+    _zoomFactor: 0.7809609
+  _haltSerialization: 0
+  _externalSerializationFile: {fileID: 0}
